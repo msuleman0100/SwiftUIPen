@@ -18,7 +18,7 @@ class DrawingSavingVM: NSObject, ObservableObject {
 
     @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if error != nil {
-            print("\nError -> \(error)\n")
+            print("\nError -> \(error?.localizedDescription ?? "nil")\n")
         } else {
             showSavedAlert.toggle()
         }

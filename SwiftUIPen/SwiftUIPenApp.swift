@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SwiftUIPenApp: App {
-    
+      
     @StateObject var imageSaverVM = DrawingSavingVM()
     @StateObject var drawingVM = DrawingVM()
     

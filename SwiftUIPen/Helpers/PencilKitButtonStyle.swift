@@ -23,8 +23,5 @@ struct PencilKitButtonStyle: ViewModifier {
 
 
 //MARK: Constants
-//let fullWidth = NSScreen.main?.frame.size.width
-//let fullHeight = NSScreen.main?.frame.size.height
-//
 let fullWidth = UIScreen.main.bounds.width
 let fullHeight = UIScreen.main.bounds.height

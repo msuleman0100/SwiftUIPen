@@ -23,7 +23,7 @@ struct PreviewDrawing: View {
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay(RoundedRectangle(cornerRadius: 20).stroke(.black, lineWidth: 2))
-          
+            
             HStack {
                 Spacer()
                 Button {

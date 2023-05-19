@@ -15,7 +15,7 @@ class DrawingSavingVM: NSObject, ObservableObject {
     func writeToPhotoAlbum(image: UIImage) {
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
     }
-
+    
     @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if error != nil {
             print("\nError -> \(error?.localizedDescription ?? "nil")\n")

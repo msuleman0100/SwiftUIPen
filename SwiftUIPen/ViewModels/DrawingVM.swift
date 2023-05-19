@@ -20,9 +20,9 @@ class DrawingVM: ObservableObject {
     
     func saveSignature(completion: (_ status: Bool) -> Void)  {
         let image = canvasView.drawing.image(from: .init(x: 0, y: 0,
-                                                        width: canvasView.frame.width,
-                                                        height: canvasView.frame.height),
-                                            scale: 1.0)
+                                                         width: canvasView.frame.width,
+                                                         height: canvasView.frame.height),
+                                             scale: 1.0)
         drawingImage = image
         completion(true)
     }

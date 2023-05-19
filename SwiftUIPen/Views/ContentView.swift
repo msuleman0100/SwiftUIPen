@@ -70,7 +70,7 @@ extension HomeView {
                 Image(systemName: "tray.and.arrow.down.fill")
                     .font(.system(size: 25))
             }
-
+            
             
         }
         .padding([.leading, .top, .trailing])

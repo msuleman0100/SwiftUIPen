@@ -79,9 +79,12 @@ extension HomeView {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
-            HomeView()
-        }
+//            HomeView()
+//                .environmentObject(DrawingVM())
+//                .environmentObject(DrawingSavingVM())
+        Text("Hello")
+            .frame(maxWidth: 100, maxHeight: .infinity, alignment: .bottom)
+            .background(Color.red)
     }
 }
 
